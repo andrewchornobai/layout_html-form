@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
+    <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +10,166 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    >
+      <fieldset class="displayInput">
+        <legend>
+          Personal information
+        </legend>
+        <label for="surname" >
+          Surname:
+          <input
+          type="text"
+          id="surname"
+          >
+        </label>
+        <label for="name" class="margin10Px">
+          Name:
+          <input
+          type="text"
+          id="name"
+          >
+        </label>
+        <label for="oldAreYou" class="margin10Px">
+          How old are You?
+          <input
+          type="number"
+          id="oldAreYou"
+          value="12"
+          class="oldAreYou"
+          >
+        </label>
+        <label for="dateOfBIrth" class="margin10Px">
+          Full date of birth:
+          <input
+          type="date"
+          id="dateOfBIrth"
+          >
+        </label>
+        <label for="acceptAgreement" class="margin10Px lastMargin">
+          I accept the term of the agreement
+          <input
+          type="checkbox"
+          name="checkboxAccept"
+          id="acceptAgreement"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="displayInput">
+        <legend>Registration</legend>
+        <label
+        for="email"
+        >
+          E-mail:
+          <input
+          type="email"
+          id="email"
+          placeholder="email@example.com"
+          >
+        </label>
+        <label
+        for="password"
+        class="margin10Px"
+        >
+          Password:
+          <input
+          type="password"
+          id="password"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="displayInput">
+        <legend>An interesting fact about you!</legend>
+        <label>
+          Do you love cats?
+          <label>
+            <input
+            type="radio"
+            name="loveCats"
+            value="Yes"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+            type="radio"
+            name="loveCats"
+            value="No"
+            >
+            No
+          </label>
+        </label>
+        <label for="choseColor">
+          What is your favorite color?
+          <input
+          type="color"
+          id="choseColor"
+          class="margin10Px"
+          >
+        </label>
+        <label for="chooseTime">
+          What time do you go to bed?
+          <input
+          type="time"
+          name="time"
+          id="chooseTime"
+          class="margin10Px"
+          >
+        </label>
+        <label for="chooseCar">
+          What are your favorite brand of cars?
+          <select
+          name="brandCar"
+          id="chooseCar"
+          class="margin10Px"
+          multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label for="rateWork">
+          How do you rate our work?
+          <input
+          type="range"
+          name="rateWork"
+          id="rateWork"
+          value="0"
+          class="margin8pxInInteresting"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="displayInput additionalInfo">
+        <legend>Additional info:</legend>
+        <label>
+          <label class="textarea">
+            Comments:
+            <textarea
+            name="textarea"
+            cols="20"
+            rows="2"
+            >
+            </textarea>
+          </label>
+          <label for="answersChange">
+            Would you recommend us?
+            <select
+            name="answersChange"
+            id="answersChange"
+            class="margin10Px"
+            >
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </label>
+      </fieldset>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
+
 </html>

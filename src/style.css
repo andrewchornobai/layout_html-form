@@ -1,1 +1,28 @@
 /* styles go here */
+.displayInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.margin10Px {
+  margin: 10px 0 0;
+}
+
+.oldAreYou {
+  width: 65px;
+}
+
+.margin8pxInInteresting {
+  margin: 12px 0 0;
+}
+
+.textarea {
+  margin: 0 ;
+  padding: 0;
+  display: block;
+}
+
+.btn-submit {
+  margin: 20px 0;
+}
