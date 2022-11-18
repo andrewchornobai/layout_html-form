@@ -1,12 +1,15 @@
 /* styles go here */
 .displayInput {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 20px;
 }
 
-.margin10Px {
-  margin: 10px 0 0;
+.displayBlock {
+  display: block;
+  margin-top: 10px;
+}
+
+.firstBlock {
+  margin-top: 0;
 }
 
 .oldAreYou {
